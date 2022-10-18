@@ -135,5 +135,93 @@ for(let i = 0; i < movies.length i++);{
 
 // console.log(enemy.greet('sauron'))
 
-// console.log(p1)
+// console.log(p1);
+// p1.setHair('pink');
+// console.log(p1);
 
+// console.log(classyGreeting(p1))
+
+//parent classes
+
+// class Character {
+//     constructor (name, age, eyes, hair, lovesCats = true, lovesDogs) {
+//       this.legs = 2;
+//       this.arms = 2;
+//       this.name = name;
+//       this.age = age;
+//       this.eyes = eyes;
+//       this.hair = hair;
+//       this.lovesCats = lovesCats;
+//       this.lovesDogs = lovesDogs || true;
+//     }
+//     greet (otherCharacter) {
+//       console.log('hi ' + otherCharacter + '!');
+//     }
+//     classyGreeting (otherClassyCharacter) {
+//       console.log('Howdy ' + otherClassyCharacter.name + '!');
+//     }
+//     setHair (hairColor) {
+//       this.hair = hairColor;
+//     }
+//     smite () {
+//       console.log('i smited thee.');
+//     }
+  
+//   }
+
+//   class hobbit extends Character {
+//     steal () {
+//         console.log('lets get away')
+//     }
+//     greet (otherCharacter) {
+//         console.log(`hobbit says hello to' ${otherCharacter}`)
+//     }
+//     smite() {
+//         super.smite();
+//         this.steal();
+
+//     }
+//   }
+
+//   const frodo = new Hobbit('mr baggins', 33, 'blue', 'brown')  const hobbit = new Character('Mr Baggins', 33, 'brown', 'black')
+//   console.log(hobbit);
+
+class car {
+    constructor(make, serialNumber) {
+        this.serialNumber = serialNumber;
+        this.make = maker;
+    }
+    drive() {
+        console.log('vroom vroom')
+    }
+}
+
+//factory class
+class factory {
+    constructor(company) {
+        this.company = company;
+        this.cars = []
+    }
+}
+generate() {
+    const newCar = new Car(this.company, this.cars.length);
+    this.cars.push(newCar)
+}
+findCar (index) {
+    return this.cars[index]
+}
+const tesla = new Factory('tesla');
+tesla.generateCar();
+tesla.generateCar();
+tesla.generateCar();
+tesla.generateCar();
+tesla.generateCar();
+console.log(tesla)
+console.log(tesla.findCar(0));
+
+const porche = new Factory('porche');
+porche.generateCar();
+porche.generateCar();
+porche.generateCar();
+console.log(porche);
+console.log(porche.findCar(1))
